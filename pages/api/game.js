@@ -1,11 +1,12 @@
-function NovoPartida() {
+async function NovaPartida() {
+    
     let npartida = document.getElementById();
     return npartida;
 
 }
 
 function SorteiaJogador() {
-    const firstPlayer;
+    let firstPlayer;
     firstPlayer = Math.random("X", "O");
     
     return firstPlayer;
