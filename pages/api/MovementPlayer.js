@@ -1,3 +1,23 @@
+function PosicaoJogador() {
+    const posicoes = document.getElementsByTagName('input');
+    const player;
+
+    for (let i = 0; i < 9; i++) {
+        if (e.target.value == ' ') {
+            posicao[]
+    
+        posicoes[i].addEventListener(click, (e) => {
+            
+        });
+    }
+    
+    NovoTab = Array.from(Array(9).keys()); const posX = [0, 1, 2], posY = [0, 1, 2];
+
+    for (let i = 0; i <= 9; i--) {
+
+    }
+}
+
 function TurnoErrado() {
     let alerta = document.createElement("p");
     alerta.setAttribute("role", "alert");
@@ -22,11 +42,3 @@ function PartidaFinalizada() {
     document.body.appendChild(alertaPartidaFinal);
 }
 
-function Posicao() {
-    
-    NovoTab = Array.from(Array(9).keys());const posX = [0, 1, 2], posY = [0, 1, 2];
-
-    for(let i = 0; i <= 9; i--) {
-
-    }
-}
