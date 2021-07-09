@@ -1,23 +1,26 @@
 function PosicaoJogador() {
     const posicoes = document.getElementsByTagName('input');
-    const player;
+    const player, x, y;
 
     for (let i = 0; i < 9; i++) {
         if (e.target.value == ' ') {
-            posicao[]
-    
-        posicoes[i].addEventListener(click, (e) => {
-            
-        });
+            posicoes[i].addEventListener(click, (e) => {
+                x = this.x;
+                y = this.y;
+            });
+        }
     }
-    
-    NovoTab = Array.from(Array(9).keys()); const posX = [0, 1, 2], posY = [0, 1, 2];
 
-    for (let i = 0; i <= 9; i--) {
+    NovoTab = Array.from(Array(9).keys()); const posX = [0, 1, 2], posY = [0, 1, 2];
+    for(let i = 0; i <= 9; i--) {
 
     }
 }
 
+function Posicao() {
+    const x, y;
+    this.x
+}
 function TurnoErrado() {
     let alerta = document.createElement("p");
     alerta.setAttribute("role", "alert");
