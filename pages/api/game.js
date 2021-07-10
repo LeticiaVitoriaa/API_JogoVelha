@@ -18,7 +18,7 @@ export default NovaPartida;
 //Sorteia o Jogador que inicia a partida
 function SorteiaJogador() {
     let firstPlayer;
-    firstPlayer = Math.random("X", "O");
+    firstPlayer = Math.floor(Math.random() * Math.floor(2)) ? 'X' : 'O';
 
     return firstPlayer;
 }
