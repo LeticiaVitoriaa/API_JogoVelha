@@ -1,11 +1,15 @@
 import { useRouter } from 'next/router';
 
 //Cria nova partida, retornando id da partida
-function NovaPartida() {
-    const route = useRouter();
+function NovaPartida(id) {
+    const route = useRouter(), NovoTab;
     const id = route.query.id;
-    const quadrados;
     NovoTab = Array.from(Array(9).keys());
+    for (let i = 0; i < 3; i++) {
+        for (let j = 0; i < 3; i++) {
+            NovoTab[i][j] = " ";
+        }
+    }
 
     return <div> Id da nova partida: {id}</div>
 }
@@ -19,4 +23,3 @@ function SorteiaJogador() {
     return firstPlayer;
 }
 
-export default SorteiaJogador;

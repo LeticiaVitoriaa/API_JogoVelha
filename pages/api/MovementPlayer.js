@@ -1,26 +1,46 @@
-function PosicaoJogador() {
-    const posicoes = document.getElementsByTagName('input');
-    const player, x, y;
 
-    for (let i = 0; i < 9; i++) {
-        if (e.target.value == ' ') {
-            posicoes[i].addEventListener(click, (e) => {
-                x = this.x;
-                y = this.y;
-            });
-        }
+
+function ChanceJogador() {
+    const vez = new Boolean();
+    const jogador1 = new Boolean(); const jogador2 = new Boolean();
+
+    const v = new SuaVez();
+
+    if (jogador1.v.getVez(true)) {
+        jogador1(true);
+        jogador2(false);
     }
-
-    NovoTab = Array.from(Array(9).keys()); const posX = [0, 1, 2], posY = [0, 1, 2];
-    for(let i = 0; i <= 9; i--) {
-
+    else {
+        jogador1(false);
+        jogador2(true);
     }
 }
 
-function Posicao() {
-    const x, y;
-    this.x
+function MovimentoJogador() {
+    const v = new Object();
 }
+
+class SuaVez {
+    constructor(vez) {
+        this.vez = vez;
+    }
+
+    SuaVez() {
+
+    }
+
+    get getVez() {
+        return this.vez;
+    }
+
+    set setVez(vez) {
+        const vez = new Boolean();
+        this.vez = vez;
+    }
+
+}
+
+/*
 function TurnoErrado() {
     let alerta = document.createElement("p");
     alerta.setAttribute("role", "alert");
@@ -44,4 +64,4 @@ function PartidaFinalizada() {
     alerta.appendChild(alertaPartidaFinal);
     document.body.appendChild(alertaPartidaFinal);
 }
-
+*/
