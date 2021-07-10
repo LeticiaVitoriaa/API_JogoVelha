@@ -50,7 +50,7 @@ function MovimentoJogador() {
 
     for (let i = 0; i < 9; i++) {
         quadrados[i].addEventListener('click', (e) => {
-            if (quadrado != ' ') {
+            if (quadrados != ' ') {
                 QuadradoPreenchido();
             }
             else if (jogador.v.getVez(false)) {
